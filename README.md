@@ -11,7 +11,7 @@ Source codes were taken from [this thread](https://users.rust-lang.org/t/executa
 ## Contribution guidelines:
 
 1. If you want to suggest flaws with this benchmark, you can open issues.
-2. If you want to change algorithm, you should
+2. If you want to change algorithm, you have to change the algorithm in all the languages.
 
 ### Notes:
 
