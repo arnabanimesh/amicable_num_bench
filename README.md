@@ -17,8 +17,7 @@ Source codes were taken from [this thread](https://users.rust-lang.org/t/executa
 
 1. Here the focus is on similar algorithm rather than the most efficient one
 2. C compilation params: `gcc -Wall -Wextra -std=c99 -Ofast -flto -s c99.c -o c99`
-3. the rust exe with no suffix was built with `-O` only
-4. Go compilation command: `go build -ldflags "-s -w" goloop.go`
-5. `-ldflags "-s -w"` removes debug symbols.
-6. Haskell was built with `ghc -O2 -optl-s hsiter.hs`
-7. `bench.txt` is the output after running `run.cmd`
+3. The rust exe was built with `rustc -O <file>`
+4. Go compilation command: `go build -ldflags "-s -w" goloop.go`. `-ldflags "-s -w"` removes debug symbols.
+5. Haskell was built with `ghc -O2 -optl-s hsiter.hs`
+6. `bench.txt` is the output after running `run.cmd`. `Hyperfine` was used to run benchmarks.
