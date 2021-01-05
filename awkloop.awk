@@ -27,10 +27,8 @@ function main() {
         main_result += amicable(i)
     }
     printf("%d\n", main_result)
-    return 0
 }
 
 BEGIN {
     main()
-    exit(0)
 }
