@@ -1,10 +1,10 @@
 #!/usr/bin/mawk -f
 
 # Warning: all variables are global in AWK
-function d(n) {
+function d(nn) {
     d_result = 1
-    for (m = 2; m < n / 2 + 1; m++) {
-        if ((n % m) == 0) {
+    for (m = 2; m < nn / 2 + 1; m++) {
+        if ((nn % m) == 0) {
             d_result += m
         }
     }
