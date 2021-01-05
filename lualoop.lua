@@ -26,7 +26,6 @@ function main()
         result = result + amicable(i)
     end
     print(result)
-    return 0
 end
 
 main()
