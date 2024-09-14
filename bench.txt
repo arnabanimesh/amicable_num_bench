@@ -1,45 +1,16 @@
-Benchmark #1: c99                                                                                                      0
-  Time (mean ± σ):     108.0 ms ±   1.3 ms    [User: 1.1 ms, System: 4.6 ms]                                           0
-  Range (min … max):   106.8 ms … 112.4 ms    25 runs
-
-Benchmark #2: c99clang
-  Time (mean ± σ):     104.4 ms ±   1.4 ms    [User: 1.5 ms, System: 3.2 ms]                                           0
-  Range (min … max):   102.8 ms … 110.3 ms    26 runs
-
-  Warning: Statistical outliers were detected. Consider re-running this benchmark on a quiet PC without any interferences from other programs. It might help to use the '--warmup' or '--prepare' options.
-
-Benchmark #3: c99vs
-  Time (mean ± σ):     106.0 ms ±   0.5 ms    [User: 2.6 ms, System: 4.8 ms]                                           0
-  Range (min … max):   104.5 ms … 106.9 ms    25 runs
-
-Benchmark #4: rsiter
-  Time (mean ± σ):     109.8 ms ±   0.8 ms    [User: 4.4 ms, System: 4.7 ms]                                           0
-  Range (min … max):   108.8 ms … 111.3 ms    24 runs
-
-Benchmark #5: rsitersum
-  Time (mean ± σ):     108.4 ms ±   1.3 ms    [User: 1.6 ms, System: 4.2 ms]                                           0
-  Range (min … max):   106.4 ms … 111.2 ms    25 runs
-
-Benchmark #6: rsloop
-  Time (mean ± σ):     124.7 ms ±   3.1 ms    [User: 3.1 ms, System: 4.4 ms]                                           0
-  Range (min … max):   122.3 ms … 137.8 ms    22 runs
-
-  Warning: Statistical outliers were detected. Consider re-running this benchmark on a quiet PC without any interferences from other programs. It might help to use the '--warmup' or '--prepare' options.
-
-Benchmark #7: goloop
-  Time (mean ± σ):     380.2 ms ±   3.9 ms    [User: 1.3 ms, System: 3.7 ms]                                           0
-  Range (min … max):   376.1 ms … 386.6 ms    10 runs
-
-Benchmark #8: hsiter
-  Time (mean ± σ):     476.8 ms ±   6.0 ms    [User: 1.3 ms, System: 3.7 ms]                                           0
-  Range (min … max):   471.2 ms … 492.4 ms    10 runs
-
+Benchmark 1: c99
+  Time (mean ± σ):      10.2 ms ±   1.7 ms    [User: 0.7 ms, System: 0.7 ms]
+  Range (min … max):     8.4 ms …  24.7 ms    138 runs
+ 
+Benchmark 2: rustlang
+  Time (mean ± σ):      10.9 ms ±   2.0 ms    [User: 0.8 ms, System: 0.8 ms]
+  Range (min … max):     9.1 ms …  23.4 ms    137 runs
+ 
+Benchmark 3: golang
+  Time (mean ± σ):      18.3 ms ±   4.2 ms    [User: 3.0 ms, System: 1.6 ms]
+  Range (min … max):    14.8 ms …  47.3 ms    103 runs
+ 
 Summary
-  'c99clang' ran
-    1.02 ± 0.01 times faster than 'c99vs'
-    1.03 ± 0.02 times faster than 'c99'
-    1.04 ± 0.02 times faster than 'rsitersum'
-    1.05 ± 0.02 times faster than 'rsiter'
-    1.19 ± 0.03 times faster than 'rsloop'
-    3.64 ± 0.06 times faster than 'goloop'
-    4.57 ± 0.08 times faster than 'hsiter'
+  'c99' ran
+    1.07 ± 0.27 times faster than 'rustlang'
+    1.80 ± 0.52 times faster than 'golang'
