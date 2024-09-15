@@ -1,16 +1,16 @@
-Benchmark 1: c99
-  Time (mean ± σ):      10.2 ms ±   1.7 ms    [User: 0.7 ms, System: 0.7 ms]
-  Range (min … max):     8.4 ms …  24.7 ms    138 runs
+Benchmark 1: c99 100000
+  Time (mean ± σ):     112.4 ms ±   8.6 ms    [User: 83.3 ms, System: 6.2 ms]
+  Range (min … max):   106.1 ms … 134.4 ms    20 runs
  
-Benchmark 2: rustlang
-  Time (mean ± σ):      10.9 ms ±   2.0 ms    [User: 0.8 ms, System: 0.8 ms]
-  Range (min … max):     9.1 ms …  23.4 ms    137 runs
+Benchmark 2: rustlang 100000
+  Time (mean ± σ):      58.8 ms ±   3.4 ms    [User: 31.4 ms, System: 2.7 ms]
+  Range (min … max):    56.0 ms …  73.6 ms    39 runs
  
-Benchmark 3: golang
-  Time (mean ± σ):      18.3 ms ±   4.2 ms    [User: 3.0 ms, System: 1.6 ms]
-  Range (min … max):    14.8 ms …  47.3 ms    103 runs
+Benchmark 3: golang 100000
+  Time (mean ± σ):     120.4 ms ±   5.2 ms    [User: 23.6 ms, System: 4.4 ms]
+  Range (min … max):   115.9 ms … 131.5 ms    21 runs
  
 Summary
-  'c99' ran
-    1.07 ± 0.27 times faster than 'rustlang'
-    1.80 ± 0.52 times faster than 'golang'
+  'rustlang 100000' ran
+    1.91 ± 0.18 times faster than 'c99 100000'
+    2.05 ± 0.15 times faster than 'golang 100000'

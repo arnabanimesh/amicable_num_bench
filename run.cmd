@@ -4,4 +4,4 @@ REM clang -Wall -Wextra -Ofast -std=c99 -flto -fuse-ld=lld c99.c -o c99clang.exe
 REM cl /Wall /O2 /Fe"c99vs.exe" c99.c //run from vsprompt
 rustc --edition 2021 -C opt-level=3 -C codegen-units=1 -C lto=true -C strip=symbols -C panic=abort rustlang.rs
 go build -ldflags "-s -w" golang.go
-hyperfine -w 5 c99 rustlang golang > bench.txt
+hyperfine "c99 %~1" "rustlang %~1" "golang %~1" > bench.txt
