@@ -5,8 +5,9 @@
 #include <stdbool.h>
 #include <errno.h>
 #include <inttypes.h>
+#include <limits.h>
 
-bool strtouint32_safe(const char *str, uint64_t *val)
+bool strtouint64_safe(const char *str, uint64_t *val)
 {
     char *temp;
     errno = 0;
@@ -71,7 +72,7 @@ int32_t main(int32_t argc, char **argv)
     uint64_t max_limit = 10000;
     if (argc > 1)
     {
-        if (strtouint32_safe(argv[1], &max_limit) == false)
+        if (strtouint64_safe(argv[1], &max_limit) == false)
         {
             fprintf(stderr, "Enter a valid integer as first CLI argument or pass no argument to consider a max limit of 10,000");
             exit(1);
@@ -90,6 +91,6 @@ int32_t main(int32_t argc, char **argv)
             amicable_sum += i;
         }
     }
-    printf("%" PRIu64 "\n",amicable_sum);
+    printf("%" PRIu64 "\n", amicable_sum);
     return 0;
 }
